@@ -10,8 +10,8 @@ const port = process.env.PORT || 5000;
 app.use(
   cors({
     origin: [
-      "https://skillup-dashboard-new.vercel.app",
-      "https://skillup-final-new-fjs4.vercel.app",
+      "https://skillup-frontend-orcin.vercel.app",
+      "https://skill-up-backend-final.vercel.app",
       "http://localhost:5173",
     ], // Allow requests from all origins
     credentials: true, // Allow cookies to be sent from the frontend
