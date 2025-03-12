@@ -11,7 +11,7 @@ app.use(
   cors({
     origin: [
       "https://skillup-frontend-orcin.vercel.app",
-      "https://skill-up-backend-final.vercel.app",
+      "https://skill-up-admin-dashboard-final.vercel.app",
       "http://localhost:5173",
     ], // Allow requests from all origins
     credentials: true, // Allow cookies to be sent from the frontend
