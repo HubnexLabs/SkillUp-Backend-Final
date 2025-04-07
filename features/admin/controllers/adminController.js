@@ -33,6 +33,8 @@ export const login = async (req, res) => {
     if(email == "ranveer@hubnex.in" && password == "Skillup@Ranveer@001"){
       const token = generateToken(email);
       res.status(200).json({ token, message: "Login Successful" });
+    }else{
+       return res.status(401).json({ message: "Invalid Credentials"});
     }
     
   } catch (error) {
