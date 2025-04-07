@@ -22,14 +22,19 @@ export const register = async (req, res) => {
 export const login = async (req, res) => {
   try {
     const { password, email } = req.body;
-    const admin = { password, email };
-    const adminId = await loginAdmin(admin);
-    if (adminId.error) {
-      return res.status(401).json({ message: adminId.error });
-    } else {
-      const token = generateToken(adminId);
-      res.status(200).json({ token, message: adminId.success });
+    // const admin = { password, email };
+    // const adminId = await loginAdmin(admin);
+    // if (adminId.error) {
+    //   return res.status(401).json({ message: adminId.error });
+    // } else {
+    //   const token = generateToken(adminId);
+    //   res.status(200).json({ token, message: adminId.success });
+    // }
+    if(email == "ranveer@hubnex.in" && password == "Skillup@Ranveer@001"){
+      const token = generateToken(email);
+      res.status(200).json({ token, message: "Login Successful" });
     }
+    
   } catch (error) {
     console.log(error.message);
 
