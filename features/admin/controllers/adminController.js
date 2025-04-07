@@ -21,8 +21,8 @@ export const register = async (req, res) => {
 
 export const login = async (req, res) => {
   try {
-    const { password, id } = req.body;
-    const admin = { password, id };
+    const { password, email } = req.body;
+    const admin = { password, email };
     const adminId = await loginAdmin(admin);
     if (adminId.error) {
       return res.status(401).json({ message: adminId.error });
