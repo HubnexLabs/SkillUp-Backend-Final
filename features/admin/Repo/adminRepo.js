@@ -19,7 +19,7 @@ export const rgisterAdmin = async (admin) => {
 };
 
 export const loginAdmin = async (admin) => {
-  const { id, password } = admin;
+  const { email, password } = admin;
   try {
     const user = await adminModel.findOne({ _id: id });
     if (!user) {
