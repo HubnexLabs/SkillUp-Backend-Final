@@ -13,7 +13,7 @@ app.use(
       //"https://skillup-frontend-orcin.vercel.app",
       //"https://skill-up-admin-dashboard-final.vercel.app", - initial
       "https://admin.skillup.hubnex.in",
-      
+      "https://skillup.hubnex.in",
       "http://localhost:5173",
     ], // Allow requests from all origins
     credentials: true, // Allow cookies to be sent from the frontend
